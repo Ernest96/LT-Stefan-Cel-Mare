@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Școala mea</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <div id="menu-btn" onclick="menu()">
+        <i id="hamburger" class="fas fa-bars"></i>
+        <i id="close" class="fas fa-times hidden"></i>
+    </div>
+
+    <navbar id="side-menu">
+        <div id="menu-logo">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <a href="#despre" onclick="menu()">Despre noi</a>
+        <a href="#merite" onclick="menu()">Merite</a>
+        <a href="#galerie" onclick="menu()">Galerie</a>
+        <a href="#orar" onclick="menu()">Orar</a>
+        <a href="#contacte" onclick="menu()">Contacte</a>
+        <a href="pages/acte.html" onclick="menu()">Acte normative</a>
+        <a href="pages/noutati.html" onclick="menu()">Noutăți</a>
+    </navbar>
+
+    <main id="main">
+        <section id="intro">
+            <div id="intro-content">
+                <h1 data-aos="zoom-in">
+                    Liceul Teoretic <br /> "Ștefan cel Mare"
+                </h1>
+                <a data-aos="zoom-in" data-aos-delay="500" href="#despre">Află mai mult</a>
+            </div>
+        </section>
+
+        <section id="despre">
+            <div class="centered" data-aos="fade-up">
+                <h1>Despre noi</h1>
+                <p>
+                    Suntem o școală exemplară cu o istorie bogată. Purtăm numele unui domnitor care a
+                    adus faimă țării și a protejat nu doar țara sa dar și întreg creștinismul.
+                    Activăm din anul 1971 și suntem situați în capitala țării. Pe toată această perioadă
+                    am livrat studii de calitate, am crescut elevi educați, erudiți și muncitori.
+                    Elevii școlii noastre aduc faimă și peste hotare la olimpiezi și concursuri.
+                    Suntem mereu deschiși la propuneri și idei noi, iar la noi în școală elevii se 
+                    simt confortabil.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam, debitis repellendus
+                    culpa assumenda tenetur nesciunt maxime reprehenderit dicta et officiis quae esse cupiditate sit
+                    nisi eligendi, ipsa est libero?
+                </p>
+                <q>Veni vidi vici</q>
+
+                <div class="cards">
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="300">
+                        <i class="far fa-check-circle"></i>
+                        <h3>Calitate</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="600">
+                        <i class="fas fa-book"></i>
+                        <h3>Dedicație</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="900">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Profesionalism</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="1200">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Siguranță</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="merite">
+            <div class="centered" data-aos="fade-up">
+                <h1>Merite</h1>
+                <i id="trofeu" class="fas fa-trophy" data-aos="flip-left" data-aos-delay="500"></i>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam, debitis repellendus
+                    culpa assumenda tenetur nesciunt maxime reprehenderit dicta et officiis quae esse cupiditate sit
+                    nisi eligendi, ipsa est libero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam, debitis repellendus
+                    culpa assumenda tenetur nesciunt maxime reprehenderit dicta et officiis quae esse cupiditate sit
+                    nisi eligendi, ipsa est libero?
+                </p>
+
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Participant în cadrul proiectului <i>Tekwill În Fiecare Școală</i>
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Locuri de frunte la olimpiada locală
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Voluntari activi în localitatea natală
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Premianți în cadrul concursului <i>Cea mai bună Școală 2020</i>
+                </div>
+
+                <div class="slideshow">
+                    <div class="slide">
+                        <div class="nr-slide"> 1/4 </div>
+                        <img src="images/scoala2.jpg" />
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 2/4 </div>
+                        <img src="images/scoala3.jpg" />
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 3/4 </div>
+                        <img src="images/scoala1.jpg" />
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 4/4 </div>
+                        <img src="images/scoala2.jpg" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="galerie">
+            <h1 class="centered">Galerie</h1>
+            <div class="container-galerie">
+                <a href="images/scoala1.jpg" target="_blank">
+                    <img src="images/scoala1.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala2.jpg" target="_blank">
+                    <img src="images/scoala2.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala1.jpg" target="_blank">
+                    <img src="images/scoala1.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala3.jpg" target="_blank">
+                    <img src="images/scoala3.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala1.jpg" target="_blank">
+                    <img src="images/scoala1.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala2.jpg" target="_blank">
+                    <img src="images/scoala2.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala3.jpg" target="_blank">
+                    <img src="images/scoala3.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala1.jpg" target="_blank">
+                    <img src="images/scoala1.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala2.jpg" target="_blank">
+                    <img src="images/scoala2.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala3.jpg" target="_blank">
+                    <img src="images/scoala3.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala2.jpg" target="_blank">
+                    <img src="images/scoala2.jpg" data-aos="flip-up">
+                </a>
+                <a href="images/scoala3.jpg" target="_blank">
+                    <img src="images/scoala3.jpg" data-aos="flip-up">
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-50 video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZhiHIUDthqM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-50 video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/47e3mgWlPFM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="orar">
+            <h1 class="centered">Orar</h1>
+
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-10">
+                <label for="clasa-10"><i class="fas fa-caret-down"></i> Clasa X</label>
+
+                <div class="content">
+                    <a href="images/10a.jpg">
+                        <div class="clasa">10 A</div>
+                        <img src="images/10a.jpg" />
+                    </a>
+                    <a href="images/10b.jpg">
+                        <div class="clasa">10 B</div>
+                        <img src="images/10b.jpg" />
+                    </a>
+                    <a href="images/10a.jpg">
+                        <div class="clasa">10 C</div>
+                        <img src="images/10a.jpg" />
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-11">
+                <label for="clasa-11"><i class="fas fa-caret-down"></i> Clasa XI</label>
+
+                <div class="content">
+                    <a href="images/10a.jpg">
+                        <div class="clasa">11 A</div>
+                        <img src="images/10a.jpg" />
+                    </a>
+                    <a href="images/10b.jpg">
+                        <div class="clasa">11 B</div>
+                        <img src="images/10b.jpg" />
+                    </a>
+                    <a href="images/10a.jpg">
+                        <div class="clasa">11 C</div>
+                        <img src="images/10a.jpg" />
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-12">
+                <label for="clasa-12"><i class="fas fa-caret-down"></i> Clasa XII</label>
+
+                <div class="content">
+                    <a href="images/11a.jpg">
+                        <div class="clasa">12 A</div>
+                        <img src="images/10a.jpg" />
+                    </a>
+                    <a href="images/11b.jpg">
+                        <div class="clasa">12 B</div>
+                        <img src="images/10b.jpg" />
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contacte">
+
+            <div class="row">
+                <div class="col-50">
+                    <h1 class="centered">Contacte</h1>
+                    <div>
+                        <b>Telefon: </b>
+                        <span>+373 78780909</span>
+                    </div>
+                    <div>
+                        <b>Adresa: </b>
+                        <span>Str. Florilor 4</span>
+                    </div>
+                    <div>
+                        <b>Email: </b>
+                        <span>stefancelmare@gmail.com</span>
+                    </div>
+
+                    <div class="formular-container">
+                        <form id="formular">
+                            <h3>Lasă un mesaj</h3>
+                            <input type="text" id="nume" placeholder="Nume" required>
+                            <br />
+                            <input type="text" id="email" placeholder="Email" required>
+                            <br />
+                            <textarea id="mesaj" rows="4" placeholder="Mesaj" required></textarea>
+                            <br />
+                            <input onclick="send()" type="button" id="transmite" value="Transmite">
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="col-50">
+                    <h1 class="centered">Ne aflăm aici</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1359.350752861421!2d28.855303726545927!3d47.0460877799566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cff0bb3078b%3A0x5ef85ec21761c944!2sI.P.%20Liceul%20Teoretic%20%22Stefan%20cel%20Mare%22!5e0!3m2!1sen!2s!4v1620835547908!5m2!1sen!2s"
+                        width="100%" height="482" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="titlu-footer">
+                IP Liceul Ștefan cel Mare
+            </div>
+            <div class="centered">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/fb.png" />
+                </a>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
